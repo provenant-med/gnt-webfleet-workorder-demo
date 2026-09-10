@@ -8,6 +8,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { DemoExplainer } from '@/components/demo-explainer';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
 
@@ -228,6 +229,7 @@ export default function Home() {
       <aside className="control-panel">
         <header className="brand-row"><img src="/gandt-logo.webp" alt="G&T Intern Transport" className="gandt-logo" /><div className="brand-copy"><p className="eyebrow">Project Chrono</p><h1>Service route playback</h1></div><Badge className="state-badge">State 1 only</Badge></header>
         <section className="metric-grid" aria-label="Dataset summary"><div><strong>{data.metadata.vehicleCount}</strong><span>vehicles</span></div><div><strong>{data.metadata.positionCount}</strong><span>positions</span></div><div><strong>{data.metadata.verifiedVisitCount}</strong><span>verified visits</span></div></section>
+        <DemoExplainer />
         <section className="panel-section">
           <label className="section-label" htmlFor="vehicle-select">Vehicle</label>
           <Select value={selectedVehicle} onValueChange={(value) => value && setSelectedVehicle(value)}><SelectTrigger id="vehicle-select" className="vehicle-select"><SelectValue /></SelectTrigger><SelectContent>{data.vehicles.map((vehicle) => <SelectItem key={vehicle.vehicle} value={vehicle.vehicle}>{vehicle.vehicle} · {vehicle.points} points</SelectItem>)}</SelectContent></Select>
