@@ -5,7 +5,7 @@ import {
   CircleCheckBig,
   ClipboardList,
   Gauge,
-  Info,
+  CircleHelp,
   Map,
   MapPinCheck,
   Navigation,
@@ -55,7 +55,7 @@ export function DemoExplainer() {
   return (
     <Dialog>
       <DialogTrigger render={<Button variant="outline" className="explainer-trigger" />}>
-        <Info />How this demo works
+        <CircleHelp />How this demo works
       </DialogTrigger>
       <DialogContent className="explainer-dialog">
         <DialogHeader className="explainer-heading">

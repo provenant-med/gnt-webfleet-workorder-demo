@@ -93,7 +93,7 @@ button, [role='button'] { cursor: pointer; }
 .coverage-note strong { color: #242629; }
 .explainer-trigger { width: 100%; height: 42px; justify-content: center; gap: 8px; border: 1px solid #cfd2d3; border-radius: 2px; color: #242629; background: #fff; font-family: "Arial Narrow", "Roboto Condensed", var(--font-geist-sans), sans-serif; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
 .explainer-trigger:hover { border-color: #15a9df; color: #0788b7; background: #eefaff; }
-.explainer-trigger svg { width: 16px; height: 16px; color: #d41432; }
+.explainer-trigger svg { width: 16px; height: 16px; color: #15a9df; }
 .explainer-dialog { width: min(1180px, calc(100vw - 32px)); max-width: none; max-height: calc(100vh - 32px); gap: 22px; overflow-y: auto; border-radius: 3px; padding: 28px; background: #f5f6f6; }
 .explainer-dialog::before { position: absolute; inset: 0 0 auto; height: 5px; content: ''; background: linear-gradient(90deg, #d41432 0 34%, #15a9df 34% 100%); }
 .explainer-heading { display: grid; gap: 5px; padding-left: 16px; border-left: 4px solid #d41432; }
