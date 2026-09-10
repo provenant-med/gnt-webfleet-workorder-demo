@@ -50,11 +50,11 @@ button, [role='button'] { cursor: pointer; }
 .control-panel { position: relative; z-index: 5; display: flex; flex-direction: column; gap: 20px; overflow-y: auto; padding: 26px 24px 22px 28px; color: #242629; background: #f7f7f6; border-right: 1px solid #d5d7d8; box-shadow: 12px 0 35px rgb(36 38 41 / 12%); }
 .control-panel::before { position: absolute; top: 0; bottom: 0; left: 0; width: 5px; content: ''; background: #d41432; }
 .brand-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 14px 12px; padding-bottom: 17px; border-bottom: 1px solid #d5d7d8; }
-.gandt-logo { grid-column: 1 / -1; width: 185px; height: auto; object-fit: contain; object-position: left center; }
+.brand-topline { grid-column: 1 / -1; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.gandt-logo { width: 185px; height: auto; object-fit: contain; object-position: left center; }
 .brand-copy h1 { margin: 3px 0 0; color: #242629; font-family: "Arial Narrow", "Roboto Condensed", var(--font-geist-sans), sans-serif; font-size: 20px; font-stretch: condensed; font-weight: 800; letter-spacing: -.01em; line-height: 1; text-transform: uppercase; }
 .eyebrow { margin: 0; color: #7c8287; font-size: 10px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 .state-badge { align-self: end; border: 0; border-radius: 2px; color: #fff; background: #15a9df; font-size: 10px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
-.brand-actions { align-self: end; display: flex; align-items: center; gap: 9px; }
 .theme-control { display: flex; align-items: center; gap: 5px; color: #7c8287; }
 .theme-control svg { width: 14px; height: 14px; }
 .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); overflow: hidden; border: 1px solid #d7d9da; border-radius: 3px; background: #fff; box-shadow: 0 5px 16px rgb(36 38 41 / 5%); }

@@ -228,7 +228,7 @@ export default function Home() {
   return (
     <main className="app-shell">
       <aside className="control-panel">
-        <header className="brand-row"><img src="/gandt-logo.webp" alt="G&T Intern Transport" className="gandt-logo" /><div className="brand-copy"><p className="eyebrow">Project Chrono</p><h1>Service route playback</h1></div><div className="brand-actions"><Badge className="state-badge">State 1 only</Badge><ThemeSwitch /></div></header>
+        <header className="brand-row"><div className="brand-topline"><img src="/gandt-logo.webp" alt="G&T Intern Transport" className="gandt-logo" /><ThemeSwitch /></div><div className="brand-copy"><p className="eyebrow">Project Chrono</p><h1>Service route playback</h1></div><Badge className="state-badge">State 1 only</Badge></header>
         <section className="metric-grid" aria-label="Dataset summary"><div><strong>{data.metadata.vehicleCount}</strong><span>vehicles</span></div><div><strong>{data.metadata.positionCount}</strong><span>positions</span></div><div><strong>{data.metadata.verifiedVisitCount}</strong><span>verified visits</span></div></section>
         <DemoExplainer />
         <section className="panel-section">
